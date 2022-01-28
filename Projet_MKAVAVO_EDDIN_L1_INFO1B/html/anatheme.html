@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="author" content="MKAVAVO_Eddin_L1-IE-31" />
+        <link rel="stylesheet" href="../css/main.css"/>
+        <title>L'Anath&egrave;me</title>
+    </head>
+    <body onload="printDateAndTime(),test()" >
+        <p id="Date"></p>
+        <div class="nav"><a href="story.html"><img src="../images/left.png" alt="left arrow error"  width="60" height="60"/></a><a href="armures.html"><img src="../images/right.png"  width="60" height="60" alt="right arrow error"/></a></div>
+        <div class="headline"><h1 style="text-align: center"><a class="main-link" href="index.html"><img src="../images/title_logo.png" alt="loading error title"/></a></h1></div>
+        <div class="summary"> 
+            <span><a class="main-link" href="jdr.html">Qu'est ce qu'un JDR ?</a></span>
+            <span><a class="main-link" href="story.html">L'Histoire</a></span>
+            <span><a class="main-link" href="anatheme.html">L'Anatheme et l'Horreur</a></span>
+            <span><a class="main-link" href="armures.html">Les armures</a></span>
+            <span><a class="main-link" href="questionnaire.html">Questionnaire</a></span> 
+        </div>
+
+        
+
+        <form name="choix-aspect" id="choix-aspect">
+            <select name="aspect" id="aspect" onchange="test()"><!--Pas touche. Ca fonctionne avec test-->
+                <option value="default">L'Anath&egrave;me</option>
+                <option value="bete">La b&ecirc;te</option>
+                <option value="chaire">La chair</option>
+                <option value="dame">La dame</option>
+                <option value="machine">La machine</option>
+                <option value="masque">Le masque</option>
+            </select>
+            <span id="hide"><input type="button" value="Flouter le bestiaire" onclick="swap(),test()"></span> <!--Renvoi vers une fonction similaire &agrave; test mais qui floute les images utilis&eacute;-->
+        </form>
+        <div id="text-presentation-aspects"></div>
+        <div class="foot-page">
+            Nom : MKAVAVO_Eddin_L1-IE-31 <br/>
+            Projet de fin de semestre INFO1-B a rendre au plus tard le 04/01/2021
+        </div>
+        <script type="text/javascript" src="../javascript/main.js"></script>
+    </body>
+
+    
+</html>

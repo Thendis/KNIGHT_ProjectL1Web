@@ -1,0 +1,42 @@
+body{font-size: 18px; color: black; margin-left: 80px; margin-right: 80px; background-image: url("../images/wallpaper.jpg"); font-family:Optima, sans-serif; background-repeat: no-repeat; }
+#Date{text-align: right; margin-left: 85%; font-size: 20px; background-color: #F1F100;}
+#main-title-video{position: relative;  margin-right: 20px;padding-top: 30px; vertical-align: top; width: 50%; margin-left: 25%;}
+.summary{text-align: center; border-radius: 20px;font-size: 26px; background-color: #F1F100; font-family: OCR A Std, monospace; font-weight: bold; margin-bottom: 30px;}
+.headline{text-align: center; margin-bottom: 20px;}
+#summary-bis{text-align: center; padding-bottom: 30px;}
+.main-link{padding: 18px;}
+.noTextZone{height: 600px;}
+span>a{text-decoration: none; color: black;}
+span>a:hover{text-decoration: underline;}
+.img-jdr{float: left; padding-right: 20px; padding-bottom: 30px; border-radius: 20px;}
+#fieldNum{text-align: center;}
+.listRPG{clear: both; border-radius: 20px;background-color: #F1F100;  margin-right: 70%;}
+.text-main-presentation{padding-top: 30px;}
+.second-summary{margin:20px; background-color: white;  }
+.second-summary:hover{ background-color: #F1F100;}
+.img-Story-1{position: relative; float: left; margin-right: 20px; margin-left: 40px; padding-bottom: 20px;}
+.img-Story-2{position: relative; float: right; margin-left: 20px; margin-right: 40px; padding-bottom: 20px;}
+.Story-title-1{text-align: left; padding-left: 40px;}
+.Story-title-2{text-align: right; padding-right: 40px;}
+.text-Story{background-color: #F1F100; padding-bottom: 30px; margin-right: 120px; padding-right: 20px; border-radius:20px;}
+.text-Story-2{background-color: #F1F100; margin-left: 120px; padding-left: 20px;border-radius:20px;}
+.alinea{padding-left: 30px;}
+.caD{color: #0F2FC0;}
+.nav{position: absolute; margin-right: 50px;}
+h2{background-color: white; border-radius: 20px;}
+.name{text-align: center; border-radius: 20px;background-color: white; border: solid;}
+.donnee{padding: 10px; text-align: center; border-radius: 10px;background-color: white;}
+.generation{text-align: left;border-radius: 20px; padding-left: 50px; background-color: #1649BF; color: white; border: solid;}
+.message{padding-top: 10px; padding-left: 10px; padding-bottom: 10px; border-bottom: solid; background-color: #A4AEB0; border-radius: 20px;}
+.foot{background-color: #1649BF;color: white; border: solid; text-align: right;}
+li{padding-top: 10px;}
+.text-bestiaire>h2{vertical-align: top; background-color: #F1F100; margin-right: 15%; padding-right: 20px;}
+.text-bestiaire{vertical-align:top ; background-color: #F1F100;margin-right: 15%; padding-right: 20px; border-radius: 20px; padding-bottom: 20px;}
+.foot-page{vertical-align: bottom;border-radius: 20px; background-color: white; margin-top: 150px; font-size: 16px; padding-top: 10px; padding-bottom: 10px;}
+legend{background-color: white;}
+fieldset{background-color: white;}
+.butt{background-color: #F1F100; font-size: bold;}
+#canvas1{float: right;}
+#quest{font-size: 14px;}
+.question{text-decoration: underline; font-size: 18px; padding-left: 10px; margin-top: 10px;}
+#connexion{background-color: white; width: 300px; margin-right: 20px; margin-bottom: 30px;}

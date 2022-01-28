@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="author" content="MKAVAVO_Eddin_L1-IE-31" />
+        <link rel="stylesheet" href="../css/main.css"/>
+        <title>Questionnaire</title>
+    </head>
+    <body onload="printDateAndTime();draw()" >
+        <p id="Date"></p>
+        <div class="nav">
+            <a href="armures.html"><img src="../images/left.png" alt="left arrow error"  width="60" height="60"/></a>
+            <img src="../images/right.png" onclick="alert('Vous &ecirc;tes sur la toute derni&egrave;re page')" width="60" height="60" alt="right arrow error"/>
+            <audio controls autoplay loop>
+                <source src="../audios/background-music.mp3"/> 
+                <source src="../audios/background-music.wav"/> 
+            </audio>
+        </div>
+        <div class="headline"><h1 style="text-align: center"><a class="main-link" href="index.html"><img src="../images/title_logo.png" alt="loading error title"></a></h1></div>
+        <div class="summary"> 
+            <span><a class="main-link" href="jdr.html">Qu'est ce qu'un JDR ?</a></span>
+            <span><a class="main-link" href="story.html">L'Histoire</a></span>
+            <span><a class="main-link" href="anatheme.html">L'Anatheme et l'Horreur</a></span>
+            <span><a class="main-link" href="armures.html">Les armures</a></span>
+            <span><a class="main-link" href="questionnaire.html">Questionnaire</a></span>
+        </div>
+
+        
+        <form id="log">
+            <fieldset id="connexion">
+                <legend>Connexion</legend>
+                <input type="email" value="mail@gmail.fr"/>
+            <br/><input type="password" value="mot de passe"/>
+            <input type="image" src="../images/logbutton.JPG" alt="error connexion button"/>
+            </fieldset>
+            
+        </form>
+        <form method="post" name="form" action="mailto:eddin.mkavavo@outlook.fr" id="quest">
+            
+            <fieldset >
+                <legend >Ressenti g&eacute;n&eacute;ral</legend>
+                <div >
+                    <span onchange="draw()"><input type="color" id="color"/></span>
+                    <canvas width="400" height="600" id="canvas1"></canvas>
+                </div>
+                <div class="question">Recherche de commandes utilis&eacute; dans le HTML(Uniquement dans ce formulaire)</div>
+                <div><input type="search" id="search"/><input type="button" value="Chercher la commande" onclick="foundMe()"/></div>
+
+                <div id="q1" class="question">1/ Corrig&eacute; le :</div> <!--Question 1-->
+                <div><input type="date" id="date1"/><input type="time" id="date2"/><input type="week" id="date3"/><input type="month" id="date4"/><input type="datetime-local" id="date5"/></div>
+                <div id="q2" class="question">2/ Impression g&eacute;n&eacute;ral du site ?</div> <!--Question 2-->
+                <textarea name="comment1" id="accueil-comment" cols="30" rows="10"></textarea>
+                <div id="q3" class="question">3/ S'il fallait noter chaque partie s&eacute;parement, quel note (entre 1 et 10) attrubureriez vous &agrave; :</div><!--Question 3-->
+                <div>
+                    L'esthetique ? <!--Min et max-->
+                    <input type="number" name="note1" id="note1" />
+                </div>
+                <div>
+                    L'organisation du code ? 
+                    <select name="note2" id="note2">
+                        <option value="un">1</option>
+                        <option value="deux">2</option>
+                        <option value="trois">3</option>
+                        <option value="quatre">4</option>
+                        <option value="cinq">5</option>
+                        <option value="six">6</option>
+                        <option value="sept">7</option>
+                        <option value="huit">8</option>
+                        <option value="neuf">9</option>
+                        <option value="dix">10</option>
+                    </select>
+                </div>
+                <div>
+                    Le respect des consignes ?
+                    <input type="range" min="1" max="10" value="5" id="note3" onchange="modField()"/><input type="text" id="fieldNum" value="5" size="1"/>
+                </div>
+                <div id="q4" class="question">4/ Screenshot des erreurs importantes</div> <!--Question 4-->
+                <input type="file" accept="image/png, image/jpeg"/>
+                <div id="q5" class="question">5/ Quelles sont les 5 diff&eacute;rents Aspects dans KNIGHT ?</div> <!--Question 5-->
+                    <input type="radio" name="quizz"/>La Dame, Le Ciel, Le Bruit, Le Masque, La B&ecirc;te <br>
+                    <input type="radio" name="quizz"/>La chair, L'horreur, Le Masque, La B&ecirc;te, L'Anath&egrave;me <br>
+                    <input type="radio" name="quizz" id="quizz"/>La b&ecirc;te, La Chair, La Dame, La Machine, Le Masque
+                <div id="q6" class="question">6/ Nom ou pseudo du correcteur :</div> <!--Question 6-->
+                <input type="text"/>
+                <div id="q7" class="question">7/ Num&eacute;ro de contact : </div> <!--Question 7-->
+                <input type="tel" id="num"/>
+                <div id="q8" class="question">8/ Un lien a partager ? </div> <!--Question 8-->
+                <input type="url"/>
+                
+                <br/><div>
+                    <input type="checkbox" id="dontCheck" class="question"/>Je ne veux pas que le formulaire soit v&eacute;rifi&eacute;
+                </div>
+                <input type="hidden" value="Ceci est un message cach&eacute;" id="isHide"/>
+            </fieldset>
+
+            <input type="submit" name="submit" class="butt" value="Envoyer" onclick="check()"/> <input type="reset" name="reset" class="butt" value="Remise a zero" onclick="cleanAll()"/>
+        </form>
+        <div class="foot-page">
+            Nom : MKAVAVO_Eddin_L1-IE-31 <br/>
+            Projet de fin de semestre INFO1-B a rendre au plus tard le 04/01/2021
+        </div>
+        <script type="text/javascript" src="../javascript/main.js"></script>
+    </body>
+</html>
